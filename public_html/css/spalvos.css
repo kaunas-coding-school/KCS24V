@@ -1,15 +1,16 @@
-p {
-    font-size: 36px;
+header {
+    background-color: lightpink;
 }
 
-.melyna {
-    color: #0000ff;
+footer {
+    background-color: #3c3c3c;
+    color: white;
 }
 
-#unik {
-    color: green;
+aside {
+    background-color: #6ddfff;
 }
 
-h1 {
-    font-size: 50px;
+main {
+    background-color: #feff86;
 }

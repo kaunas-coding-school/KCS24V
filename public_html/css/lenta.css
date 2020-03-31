@@ -1,0 +1,32 @@
+body, html{
+    height: 100%;
+    width: 100%;
+}
+
+.centras {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 200px 500px 100px 1fr;
+    grid-template-rows: 1fr 50px 1fr 50px;
+}
+
+.centras>div{
+    font-size: 24px;
+    background-color: rgb(71,70,74);
+}
+
+.centras>div:nth-child(4n+2){
+    background-color: cadetblue;
+}
+
+.centras>div:nth-child(4n+4){
+    background-color: lightgreen;
+}
+
+.centras>div:nth-child(2n+16){
+    background-color: pink;
+}
+DIV_22
+DIV_23
+DIV_24
+DIV_25

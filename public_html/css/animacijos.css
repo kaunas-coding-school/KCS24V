@@ -1,0 +1,14 @@
+/* Animacijos kodas */
+@keyframes spalvosPasikeitimas {
+    0% {background-color: red;}
+    50% {background-color: yellow;}
+    100 %{background-color: red;}
+}
+
+/* Elementas kuriam taikysime animacija */
+#elementas:hover {
+    background-color: red;
+    animation-name: spalvosPasikeitimas;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+}

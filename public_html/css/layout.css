@@ -6,16 +6,36 @@ html, body{
 body {
     display: grid;
     grid-template-areas:
-            'antraste antraste'
-            'm a'
-            'f a';
+            'h h'
+            'a m'
+            'f f';
     grid-template-columns: 200px 1fr;
     grid-template-rows: 100px 1fr 100px;
     grid-gap: 10px;
 }
 
+@media only screen and (max-width: 900px) {
+    body {
+        grid-template-areas:
+                'h h'
+                'm a'
+                'f f';
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        grid-template-rows: 100px 1fr 1fr 100px;
+        grid-template-areas:
+                'h h'
+                'm m'
+                'a a'
+                'f f';
+    }
+}
+
 header{
-    grid-area: antraste;
+    grid-area: h;
 }
 aside {
     grid-area: a;

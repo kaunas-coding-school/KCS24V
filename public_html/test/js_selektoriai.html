@@ -7,7 +7,9 @@
 </head>
 <body>
 
-<div id="uuid">Labas Tautvydai</div>
+<div id="uuid" onclick='uuid.setAttribute("class", "stilius");'>Labas Tautvydai</div>
+
+<input type="button" value="Kiek" onclick="window.alert(kiekText)">
 
 <img src="/img/logo.png" alt="Foto" class="galerijos_foto" onclick="document.getElementsByClassName('galerijos_foto')[0].src ='/img/logo.png'">
 <img src="/img/logo.png" alt="Foto" class="galerijos_foto">
@@ -33,6 +35,7 @@
 </div>
 
 <script src="/js/jsSelektoriai.js"></script>
+<script src="/js/jsUzduotis.js"></script>
 
 </body>
 </html>

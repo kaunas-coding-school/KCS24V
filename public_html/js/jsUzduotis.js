@@ -18,7 +18,7 @@ function getFotos() {
     return document.querySelectorAll('img:nth-child(2n)');
 }
 
-function keistiAltTeksta() {
+function keistiAltTeksta(fotos) {
     for (let i = 0; i < fotos.length; ++i) {
         elem = fotos[i];
         elem.setAttribute("alt", "Testas");
@@ -67,7 +67,7 @@ let fotos = getFotos();
 let uuid = gautiElementa('uuid');
 let uuid2 = gautiElementa('uuid2');
 
-keistiAltTeksta();
+keistiAltTeksta(fotos);
 // pirmasBudas();
 // antrasBudas();
 // treciasBudas();

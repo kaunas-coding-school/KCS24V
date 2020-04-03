@@ -1,6 +1,6 @@
 let xyz = document.getElementById('uuid');
 let zyx = document.getElementsByClassName('galerijos_foto')[0];
-let abc = document.querySelectorAll('.kita .kita_klase')[2];
+let abc = document.querySelectorAll('.wrapper .element')[2];
 
 xyz.innerHTML = 'Labas pasauli!';
 zyx.src = '/img/off.png';

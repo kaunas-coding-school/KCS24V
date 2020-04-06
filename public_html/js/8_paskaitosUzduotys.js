@@ -51,4 +51,53 @@ window.addEventListener('load', function() {
     }
 
     spausdintiStudenta(studentai[2])
+
+    let A = [1,3,6,5,7,2,2,4,4,8];
+
+    function sudeti(masyvas, tipas) {
+        let masyvoIlgis = masyvas.length;
+        let sumaLyg = 0;
+        let sumaNelyg = 0;
+
+        if (masyvoIlgis < 1 ){
+            return 'Per mažai duomenų masyve';
+        }
+
+        for (let i = 0; masyvoIlgis > i; ++i){
+            let pazymys = masyvas[i];
+
+            if (i % 2 === 0){
+                sumaLyg += pazymys;
+            } else {
+                sumaNelyg += pazymys;
+            }
+        }
+
+        if (tipas === 'even') {
+            return sumaLyg;
+        }
+
+        if (tipas === 'odd'){
+            return sumaNelyg;
+        }
+
+        return 'Nenurodėte tipo (even/odd)';
+    }
+
+    console.log(A);
+    console.log("Lyg", sudeti(A, 'even'));
+    console.log("Nelyg", sudeti(A, 'odd'));
+
+    function skaiciuoti() {
+        let rez;
+
+        let inputReiksme = document.getElementById('laukelis').value; // "5"
+
+        rez = parseInt(inputReiksme) * parseInt(inputReiksme);
+
+        window.alert(rez);
+    }
+
+    document.querySelector('[type="button"]').addEventListener("click", skaiciuoti);
+
 });

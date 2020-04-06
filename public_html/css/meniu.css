@@ -1,0 +1,7 @@
+main > p {
+    display: none;
+}
+
+main > p:first-child {
+    display: block;
+}

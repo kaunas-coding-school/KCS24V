@@ -101,3 +101,10 @@ window.addEventListener('load', function() {
     document.querySelector('[type="button"]').addEventListener("click", skaiciuoti);
 
 });
+
+
+$(function(){
+    let inputReiksme = $('#laukelis').val();
+
+    console.log(inputReiksme);
+});

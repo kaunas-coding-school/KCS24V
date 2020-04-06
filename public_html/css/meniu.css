@@ -5,3 +5,22 @@ main > p {
 main > p:first-child {
     display: block;
 }
+nav {
+    display: flex;
+    height: 100%;
+    align-content: center;
+    justify-self: center;
+}
+
+nav > a {
+    align-self: center;
+    align-items: center;
+    padding-right: 10px;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+}
+
+nav > a:hover, .active{
+    color: coral;
+}

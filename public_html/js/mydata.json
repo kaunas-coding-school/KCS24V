@@ -1,0 +1,18 @@
+{
+  "home": {
+    "title": "Pradžia",
+    "content": "Turinys pradžia..."
+  },
+  "about": {
+    "title": "Apie",
+    "content": "Turinys <br/><b>Apie</b>..."
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "content": "Turinys Portfolio..."
+  },
+  "contacts": {
+    "title": "Kontaktai",
+    "content": "Turinys Kontaktai..."
+  }
+}
